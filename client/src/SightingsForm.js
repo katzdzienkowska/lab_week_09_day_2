@@ -11,6 +11,7 @@ const SightingsForm = ({addSighting}) => {
 
     const onChange = (e) =>{
         const newFormData = Object.assign({}, formData);
+        // const newFormData = {...formData}; - above approach is an older way of doing things
         // console.log(newFormData)
         newFormData[e.target.name] = e.target.value;
         setFormData(newFormData);
